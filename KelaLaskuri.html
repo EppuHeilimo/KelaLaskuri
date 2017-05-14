@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html lang="FI">
+	<head>
+		<title>Kela laskuri</title>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+		<style>
+		
+			.testi {
+				
+			
+			}
+			
+			body, html{
+				height: 92%;
+			}
+
+			html {
+			
+				background-color: white;
+				background-repeat: initial;
+				display: table;
+				margin: auto;
+				
+			}
+
+			body {
+				display: table-cell;
+
+			}
+
+			content {
+
+				font-weight: bold;
+				position: relative;
+				top: 10px;
+				left: 0px;
+				font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+				color: black;
+				font-size: 14px;
+				
+			}
+			
+			input[type="number"] {
+				width:25%;
+			}
+			
+			input[type="submit"] {
+				font-size: 50px;
+			}
+			
+			p{
+				
+			}
+
+
+		</style>
+		<script src="script.js"></script>
+		
+	</head>
+
+		
+	<body>
+		<content>
+			<p>asdasd</p>
+			<form onsubmit="return getAnswer()" onchange="return tryChange()">
+				Kelan sisähalkaisija: <br> <input type="number" step="any" name="sisahalkaisija" id="sisahalkaisija" value="24"> mm<br>
+				Käämin leveys (mm): <br> <input type="number" step="any" name="leveys" id="leveys" value="14"><br>
+				Langan halkaisija (mm): <br> <input type="number" step="any" name="halkaisija" id="halkaisija" value=""><br>
+				Induktanssi (mH): <br> <input type="number" step="any" name="induktanssi" id="induktanssi" value=""><br>
+				Kuparin hinta (€/kg): <br> <input type="number" step="any" name="copper" id="copper" value="18"><br>
+				
+				<!--- MUUTA VALUE KOHTAA --->
+				Lähtöhinta: <br> <input type="number" step="any" name="lahtoHinta" id="lahtohinta" value="0.85"><br><br>
+				
+				<input type="submit" value="Laske" >
+				
+			</form>
+			<br><br>
+			<div class="testi">
+				<div id="D"></div> <br>
+				<div id="N"></div> <br>
+				<div id="R"></div> <br>
+				<div id="M"></div> <br>
+			</div>
+			<div id="alvitonhinta"></div> <br>
+			<div id="hinta"></div> <br>
+			<div id="myyntihinta"></div> <br><br>
+			</div>
+		</content>
+	</body>
+
+</html>
